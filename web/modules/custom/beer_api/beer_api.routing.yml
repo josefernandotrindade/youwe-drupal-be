@@ -1,0 +1,7 @@
+beer_api.search_page:
+  path: '/search-beer'
+  defaults:
+    _controller: '\Drupal\beer_api\Controller\SearchBeerController::content'
+    _title: 'Beers by dish'
+  requirements:
+    _permission: 'access content'

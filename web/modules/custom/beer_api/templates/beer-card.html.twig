@@ -1,0 +1,17 @@
+<h3>{{ name }}</h3>
+
+{% if image is not empty %}
+  {{ render_var({
+    '#theme': 'image',
+    '#uri': image,
+    '#alt': name,
+  }) }}
+{% endif %}
+
+<p>{{ tagline }}</p>
+
+{% if abv is not empty %}
+  <ul>
+    <li>{{ 'Alcohol content <strong>@content%</strong>'|t({ '@content': abv }) }}</li>
+  <ul>
+{% endif %}

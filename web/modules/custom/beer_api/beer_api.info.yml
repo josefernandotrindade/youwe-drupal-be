@@ -1,0 +1,6 @@
+name: The Beer Module
+description: The Beer API and blocks.
+package: Beer
+type: module
+php: 8.0
+core_version_requirement: ^9 || ^10
